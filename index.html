@@ -56,13 +56,16 @@
 
       // with Objects
       const person = {
-        name: 'Wes Bos',
-        age: 80
+        name: 'Jon Kim',
+        age: 28
       };
 
       // and think we make a copy:
+      // const captain = person;
+      // captain.number = 99;
 
       // how do we take a copy instead?
+      const cap2 = Object.assign({}, person, {number: 99, age: 13});
 
       // We will hopefully soon see the object ...spread
 
